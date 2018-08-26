@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--boostrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <!--Font awesome icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/customise.css">
+    <title>Task-4</title>
+</head>
+
+<body>
+
+<div id="wrapper">
+    <!--Side bar-->
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="header-info">
+                <a href="https://shruti49.github.io/TASK-4/">
+                    <img src="https://image.ibb.co/bLb7T9/logo.jpg" class="header-logo" alt="logo">
+                    <span class="header-name text-danger"> Bitmanity</span>
+                </a>
+            </li>
+            <li class="search-box">
+                <div class="form-group has-search">
+                    <span class="fa fa-search form-control-feedback"></span>
+                    <input type="text" class="form-control" placeholder="Search games..">
+                </div>
+            </li>
+            <li class="nav-list-item2 border-bottom border-top border-danger mt-5">
+                <a href="https://shruti49.github.io/deals-page/." class="list-item text-danger font-weight-bold">Deals</a>
+
+            </li>
+            <li class="signin">
+                <button id="btn1" type="button" data-toggle="modal" data-target="#login-modal" class="btn btn-lg bg-danger">sign-in</button>
+            </li>
+            <li class="register">
+                <button id="btn2" type="button" data-toggle="modal" data-target="#signup-modal" class="btn btn-lg btn-outline-secondary">register</button>
+            </li>
+        </ul>
+    </nav>
+
+    <!--Main navigation content-->
+
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row" id="main">
+                <a href="#" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <!-- ********************************************
+                            image slider
+                            ********************************** -->
+                <section id="game-offer">
+                    <div class="jumbotron" style="margin-bottom: 0px;">
+
+                        <div id="demo" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ul class="carousel-indicators">
+                                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                <li data-target="#demo" data-slide-to="1"></li>
+                                <li data-target="#demo" data-slide-to="2"></li>
+                            </ul>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner header-carousel">
+                                <div class="carousel-item active">
+                                    <img src="https://data4.origin.com/content/dam/originx/web/app/programs/Store/mluaug/playerappreciationfy19_alt_store_hero_en_ww_v4.jpg"
+                                        alt="Los Angeles" style="width:100%;">
+                                    <div class="carousel-caption image-content text-center">
+                                        <h2>PLAYER APPRECIATION
+                                            <br>SALE</h2>
+                                        <h3>Save upto 85% off on incridible title until 10AM PDT
+                                            <br>Aug. 28!</h3>
+                                        <button class="btn btn-warning">
+                                            <h4>See more deals</h4>
+                                        </button>
+                                    </div>
+
+                                </div>
+
+                                <div class="carousel-item">
+
+                                    <img src="https://data3.origin.com/content/dam/originx/web/app/programs/Store/mluaug/playerappreciationfy19_BF1_store_hero_en_ww_v3.jpg"
+                                        alt="Chicago" style="width:100%;">
+                                    <div class="carousel-caption image-content text-center">
+                                        <div class="overlay">
+
+                                            <h2>Get upto 85% off Battlefield 1</h2>
+                                            <h3>Save on Revolution,the Standard Edition,Premium Pass
+                                                <br> and More</h3>
+                                            <button class="btn btn-warning">
+                                                <h4>Save Now</h4>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="https://data2.origin.com/content/dam/originx/web/app/programs/Store/mluaug/playerappreciationfy19_TS4_store_hero_na_v3.jpg"
+                                        alt="New york" style="width:100%;">
+                                    <div class="carousel-caption image-content text-center">
+                                        <div class="overlay">
+
+                                            <h2>Save and play The Sims 4</h2>
+                                            <h3>Get great deals on The Sims 4,Seasons,Cats,Dogs and
+                                                <br>more right now!</h3>
+                                            <button class="btn btn-warning">
+                                                <h4>Show Me</h4>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- Left and right controls -->
+                            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                <!-- next and previous button-->
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#demo" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!--image slider end-->
+
+                <!-- ********************************************
+                            ******************************************
+                                        Premier Games
+                            ******************************-->
+                <section id="premier-games">
+                    <div class="container-fluid">
+                        <div class="row">
+
+                            <div class="col-md-6 col-sm-6 m-auto d-block premier-games-image">
+
+                                <img src="https://data3.origin.com/content/dam/originx/web/app/programs/Store/mluaug/OA_Premier_store_half_Madden19_HOF_new_en_ww_v2.jpg"
+                                    class="img-fluid img-responsive">
+                                <div class="overlay1">
+                                    <h3>Madden NFL 19 is here</h3>
+                                    <h4>Join Premier and play Hall of Fame Edition today</h4>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6 col-sm-6 m-auto d-block premier-games-image">
+                                <img src="https://data2.origin.com/content/dam/originx/web/app/programs/Store/mluaug/OA_Premier_store_half_BurnOutParadiseRemastered_en_ww_v2.jpg"
+                                    class="img-fluid img-responsive">
+                                <div class="overlay1">
+                                    <h3>Join Premier & feel the rush in 4K</h3>
+                                    <h4>Be the first to the finish line in Burnout Paradise Remastered</h4>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 m-auto d-block premier-games-image">
+                                <img src="https://data1.origin.com/content/dam/originx/web/app/programs/Store/mlujuly/BFV_store_half_en_ww_v2.jpg" class="img-fluid img-responsive">
+                                <div class="overlay1">
+                                    <h3>WW2 as you've never seen it before</h3>
+                                    <h4>Immerse yourself in iconic action & charge into Battlefield V</h4>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 m-auto d-block premier-games-image">
+                                <img src="https://data2.origin.com/content/dam/originx/web/app/merch/OA_Premier_FIFA19_UE_store_half_en_ww_v1.jpg" class="img-fluid img-responsive">
+                                <div class="overlay1">
+                                    <h3>Get ready for your FIFA 19 season</h3>
+                                    <h4>With Origin Access Premier you can play days before release!</h4>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+                <!-- ****************************************************
+                            *********************************************
+                                             On Sale game
+                                             ****************************-->
+
+                <section id="onsale-games">
+
+                    <div class="container">
+                        <h2 class="text-center mb-4">ON Sale</h2>
+                        <div id="demo2" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ul class="carousel-indicators">
+                                <li data-target="#demo2" data-slide-to="0" class="active"></li>
+                                <li data-target="#demo2" data-slide-to="1"></li>
+
+                            </ul>
+                            <div class="carousel-inner">
+                                <div class="carousel-item  active">
+
+                                    <div class="row">
+
+                                        <div class="col-md-2  col-lg-2 col-10 m-auto d-block">
+                                            <div class="card card-height">
+                                                <img src="https://preview.ibb.co/dOx55z/1.jpg" class="card-img img-fluid img-responsive">
+                                                <div class="card-body text-center">
+                                                    <h5 class="card-title card-sale-title">
+                                                        The Sims 4 Season
+                                                    </h5>
+                                                    <p class="card-text">
+                                                        <span style="color:green">RS. 1,874.25</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2  col-lg-2 col-10 m-auto d-block">
+                                            <div class="card card-height">
+                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNCOX0YPUP_Yp4ilESjMn4Sql8NBjppgcWXXNQnviON19eEpgq" class="card-img img-fluid img-responsive">
+                                                <div class="card-body">
+                                                    <h5 class="card-title card-sale-title">
+                                                        Fifa 18
+                                                    </h5>
+                                                    <p class="card-text">
+                                                        <span style="color:green">RS. 1,500.25</span>
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2  col-lg-2 col-10 m-auto d-block">
+                                            <div class="card card-height">
+                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLkMQhdTkVEH9Ax8Qv56tNT8vGvaqtFnW3ScngxQgbihbvsZRAeQ" class="card-img img-fluid img-responsive">
+                                                <div class="card-body">
+                                                    <h5 class="card-title card-sale-title">
+                                                        STAR WARS Battlefront
+                                                    </h5>
+                                                    <p class="card-text">
+                                                        <span style="color:green">RS. 1,166.25</span>
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2  col-lg-2 col-10 m-auto d-block">
+                                            <div class="card card-height">
+                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Hc_jcTlnWppYDabOgAU894gpncERF0R66kfGEnc4wIM6wVjZ" class="card-img img-fluid img-responsive">
+                                                <div class="card-body">
+                                                    <h5 class="card-title card-sale-title">
+                                                        Titanfall 2: Ultimate Edition
+                                                    </h5>
+                                                    <p class="card-text">
+                                                        <span style="color:green">RS. 624.75</span>
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2  col-lg-2 col-10 m-auto d-block">
+                                            <div class="card card-height">
+
+                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYcy5d0wHt-qJFo0XZr87j48BNz3oq49hji-QPoohOYRPAmYCL" class="card-img img-fluid img-responsive">
+                                                <div class="card-body">
+                                                    <h5 class="card-title card-sale-title">
+                                                        Battlefied 4: Premium Edition
+                                                    </h5>
+                                                    <p class="card-text">
+                                                        <span style="color:green">RS. 899.90</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2  col-lg-2 col-10 m-auto d-block">
+                                            <div class="card card-height">
+
+                                                <img src="https://image.ibb.co/kCSV5z/2.jpg" class="card-img img-fluid img-responsive">
+                                                <div class="card-body">
+                                                    <h5 class="card-title card-sale-title">
+                                                        Battelfield 1 Revolution
+                                                    </h5>
+                                                    <p class="card-text">
+                                                        <span style="color:green">RS. 583.34</span>
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+
+                                        <div class="col-md-2  col-lg-2 col-10 m-auto d-block">
+                                            <div class="card card-height">
+                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX3gOgWwc-Y2uOI0-9-kJo-bsbqWAQmjDyxt7iBiucsxJK3cLyQg" class="card-img img-fluid img-responsive">
+                                                <div class="card-body text-center">
+                                                    <h5 class="card-title card-sale-title">
+                                                        Nfs Need for Speed
+                                                    </h5>
+                                                    <p class="card-text">
+                                                        <span style="color:green">RS. 2,574.25</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2  col-lg-2 col-10 m-auto d-block">
+                                            <div class="card card-height">
+                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE20t3Hm2X39qZNU72ouBTkCk4m6lvgjO-Mh8hCY_blmyG0h4z" class="card-img img-fluid img-responsive">
+                                                <div class="card-body">
+                                                    <h5 class="card-title card-sale-title">
+                                                        GTA Vice City
+                                                    </h5>
+                                                    <p class="card-text">
+                                                        <span style="color:green">RS. 1,999.25</span>
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2  col-lg-2 col-10 m-auto d-block">
+                                            <div class="card card-height">
+                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6x1KFj-fqe8M_nBMiQN1WrDav8nkHiLzbojcvs8cUpKU8PXXh" class="card-img img-fluid img-responsive">
+                                                <div class="card-body">
+                                                    <h5 class="card-title card-sale-title">
+                                                        CS Go
+                                                    </h5>
+                                                    <p class="card-text">
+                                                        <span style="color:green">RS. 1,266.25</span>
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2  col-lg-2 col-10 m-auto d-block">
+                                            <div class="card card-height">
+                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Hc_jcTlnWppYDabOgAU894gpncERF0R66kfGEnc4wIM6wVjZ" class="card-img img-fluid img-responsive">
+                                                <div class="card-body">
+                                                    <h5 class="card-title card-sale-title">
+                                                        Titanfall 2: Ultimate Edition
+                                                    </h5>
+                                                    <p class="card-text">
+                                                        <span style="color:green">RS. 624.75</span>
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2  col-lg-2 col-10 m-auto d-block">
+                                            <div class="card card-height">
+
+                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYcy5d0wHt-qJFo0XZr87j48BNz3oq49hji-QPoohOYRPAmYCL" class="card-img img-fluid img-responsive">
+                                                <div class="card-body">
+                                                    <h5 class="card-title card-sale-title">
+                                                        Battlefied 4: Premium Edition
+                                                    </h5>
+                                                    <p class="card-text">
+                                                        <span style="color:green">RS. 899.90</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2  col-lg-2 col-10 m-auto d-block">
+                                            <div class="card card-height">
+
+                                                <img src="https://image.ibb.co/kCSV5z/2.jpg" class="card-img img-fluid img-responsive">
+                                                <div class="card-body">
+                                                    <h5 class="card-title card-sale-title">
+                                                        Battelfield 1 Revolution
+                                                    </h5>
+                                                    <p class="card-text">
+                                                        <span style="color:green">RS. 583.34</span>
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#demo2" data-slide="prev">
+                                    <!-- next and previous button-->
+                                    <span class="carousel-control-prev-icon"></span>
+                                </a>
+                                <a class="carousel-control-next" href="#demo2" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </section>
+                <!-- End of Onsale-->
+                <!--great Action Game-->
+                <section id="action-games">
+
+                    <div class="container">
+                        <h2 class="text-center mb-4">Great Action Games</h2>
+                        <div class="row">
+                            <div class="col-md-2  col-lg-2 col-10 m-auto d-block">
+                                <div class="card card-height">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuUHR818ceqIjyEb3q4b9FDbGnoFDfOOGQ8UON7ksgsRo-8A8I" class="card-img img-fluid img-responsive">
+                                    <div class="card-body">
+                                        <h5 class="card-title card-sale-title">
+                                            The Banner Saga 3 Standard Edition
+                                        </h5>
+                                        <p class="card-text">
+                                            <span style="color:green">RS. 778.00</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2  col-lg-2 col-10 m-auto d-block">
+                                <div class="card card-height">
+
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX9Scmj68cE4ajy1SPSvwqqgDd9FXsGRceBdD2VXtANYNutLs1kA" class="card-img img-fluid img-responsive">
+                                    <div class="card-body">
+                                        <h5 class="card-title card-sale-title">
+                                            SpellForce 3
+                                        </h5>
+                                        <p class="card-text">
+                                            <span style="color:green">RS. 2899.90</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2  col-lg-2 col-10 m-auto d-block">
+                                <div class="card card-height">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLuXyww7eY71p2MOz9Y_sSIRRQDOen4M5kldNxZzM-NdfYKb3R" class="card-img img-fluid img-responsive">
+                                    <div class="card-body">
+                                        <h5 class="card-title card-sale-title">
+                                            Batman:Arkham Origins
+                                        </h5>
+                                        <p class="card-text">
+                                            <span style="color:green">RS. 1499.90</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2  col-lg-2 col-10 m-auto d-block">
+                                <div class="card card-height">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ664X6ooPZwvm4cVl1j44b-YGxmuU_SAwcv5Xex-Dn2uh5yRhV" class="card-img img-fluid img-responsive">
+                                    <div class="card-body">
+                                        <h5 class="card-title card-sale-title">
+                                            Distrust
+                                        </h5>
+                                        <p class="card-text">
+                                            <span style="color:green">RS. 499.90</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2  col-lg-2 col-10 m-auto d-block">
+                                <div class="card card-height">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj5D4a1EBfiGhqCWq_u-xS6_n3EdVtXwnpkZsUK7qyOUUg5_SPRA" class="card-img img-fluid img-responsive">
+                                    <div class="card-body">
+                                        <h5 class="card-title card-sale-title">
+                                            Dead Island Riptide
+                                        </h5>
+                                        <p class="card-text">
+                                            <span style="color:green">RS. 1499.90</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2  col-lg-2 col-10 m-auto d-block">
+                                <div class="card card-height">
+
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1doYZf0jdrdYRj4ENPsnW_m3stQm3EsRaGje4Cg8FjD8WRYvYlQ" class="card-img img-fluid img-responsive">
+                                    <div class="card-body">
+                                        <h5 class="card-title card-sale-title">
+                                            This is the Police 2
+                                        </h5>
+                                        <p class="card-text">
+                                            <span style="color:green">RS. 499.90</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+                <!--End-->
+
+                <article>
+
+                    <div class="modal fade" id="login-modal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header text-center">
+                                    <img id="imaging" class="img-thumbnail" src="img/logo1.jpeg " alt="image here">
+                                </div>
+                                <div id="div-forms">
+                                    <form>
+                                        <div class="modal-body">
+                                            <div text-center>Enter your Email and password here:</div>
+                                            <input class="form-control" placeholder="Email" type="text" required>
+                                            <input class="form-control" placeholder="password" type="password" required>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox">Remember me
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="signup-modal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header text-center">
+                                    <img alt="image here" class="img-thumbnail" id="imaging" src="img/logo1.jpeg ">
+                                </div>
+                                <div id="div-forms">
+                                    <form>
+                                        <div class="modal-body">
+                                            <div text-center="">
+                                                Enter your details here:
+                                            </div>
+                                            <input class="form-control" placeholder="Enter your Name" required="" type="text">
+                                            <br>
+                                            <input class="form-control" placeholder="Enter your Email" required="" type="text">
+                                            <input class="form-control" placeholder="Enter your password" required="" type="password">
+                                            <input class="form-control" placeholder="Confirm your password" required="" type="password">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"> Remember me
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <button class="btn btn-primary btn-lg btn-block" type="submit">
+                                                        Sign Up
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!----------------Footer------------------->
+
+                <footer>
+
+                </footer>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+        <script src="js/app.js"></script>
+</body>
+
+</html>
